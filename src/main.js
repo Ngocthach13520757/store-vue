@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './../node_modules/bulma/css/bulma.css'
+import VeeValidate from 'vee-validate';
 
 Vue.config.productionTip = false
+Vue.use(VeeValidate, { events: 'blur' });
 
 /* eslint-disable no-new */
 new Vue({
